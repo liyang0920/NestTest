@@ -1,0 +1,6 @@
+{"type": "record", "name": "Supplier", "namespace": "AvroTest.s",
+"fields": [
+	{"name": "s_suppkey", "type": "long"},
+	{"name": "s_nationkey", "type": "long"}
+	]
+}

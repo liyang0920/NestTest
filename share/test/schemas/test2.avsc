@@ -1,0 +1,14 @@
+{"namespace": "example.test",
+"name": "Test2", "type": "record",
+"fields": [
+	{"name": "test2_ok", "type": "long", "order": "ignore"},
+	{"name": "test2_ck", "type": "long", "order": "ignore"},
+	{"name": "ftest1", 
+	"type": {"type": "array", "items":[
+	{ "type": "record", "name": "Test1",
+		"fields": [{"name": "test1_ok", "type": "long"}, {"name": "test1", "type": "string"}]}
+		]
+		}	
+		}		
+	]
+}

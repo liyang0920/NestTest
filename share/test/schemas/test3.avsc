@@ -1,0 +1,32 @@
+{"namespace": "example.test",
+"name": "Test3", "type": "record",
+"fields": [
+	{"name": "test3_ck", "type": "long", "order": "ignore"},
+	
+	{"name": "ftest2", 
+	"type": {"type": "array", "items": [
+	{"type":"record", "name": "Test2", 
+		"fields": [
+		{"name": "test2_ok", "type": "long"}, 
+		{"name": "test2_ck", "type": "long"}, 
+		
+		{"name": "ftest1", 
+		"type": {"type": "array", "items":[
+		{ "type": "record", "name": "Test1",
+			"fields": [
+			{"name": "test1_ok", "type": "long"}, 
+			{"name": "test1", "type": "string"}
+				]
+			}
+			]
+		}
+		}
+		
+		]
+	}
+	]
+	}
+	}
+	
+	]
+}

@@ -1,0 +1,7 @@
+{"namespace": "example.test",
+"name": "Test1", "type": "record", 
+ "fields": [
+ 	{"name": "test1_ok", "type": "long", "order": "ignore"},
+ 	{"name": "test1", "type": "string"} 
+ 	]
+ }

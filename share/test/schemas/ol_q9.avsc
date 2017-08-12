@@ -1,0 +1,29 @@
+{"namespace":"AvroTest.loc",
+"type": "record", "name": "Customer",
+"fields":[
+	{"name": "orders",
+	"type": {"type": "array", "items": [
+		{"type": "record", "name": "Orders",
+		"fields": [
+     	{"name": "o_orderdate", "type": "string"},
+     	{"name": "lineitem", 
+     		"type": {"type": "array", "items": [
+     			{"type": "record", "name": "Lineitem",
+ 					"fields": [
+     				{"name": "l_partkey", "type": "long"},
+     				{"name": "l_suppkey", "type": "long"},
+     				{"name": "l_quantity", "type": "float"},
+     				{"name": "l_extendedprice", "type": "float"},
+     				{"name": "l_discount", "type": "float"}
+ 					]
+ 				}
+ 					]
+ 				}
+			}			
+ 	]
+ 	}
+ ]
+ }
+ }
+ ]
+ }

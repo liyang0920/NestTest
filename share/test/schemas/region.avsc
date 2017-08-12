@@ -1,0 +1,8 @@
+{"type": "record", "name": "tpch.part",
+ "doc": "The part table.",
+ "fields": [
+     {"name": "r_regionkey", "type": "long", "order": "ignore"},
+     {"name": "r_name", "type": "string"},
+     {"name": "r_comment", "type": "string"}
+ ]
+}

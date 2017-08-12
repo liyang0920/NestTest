@@ -1,0 +1,8 @@
+{"type": "record", "name": "tpch.q9",
+ "doc": "The nation table.",
+ "fields": [
+     {"name": "nation", "type": "string", "order": "ignore"},
+     {"name": "o_year", "type": "string"},
+     {"name": "sum", "type": "double"}
+ ]
+}

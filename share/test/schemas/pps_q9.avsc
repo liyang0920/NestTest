@@ -1,0 +1,19 @@
+{"type": "record", "namespace": "AvroTest.pps", 
+"name": "Part",
+ "fields": [
+     {"name": "p_partkey", "type": "long"},
+     {"name": "p_name", "type": "string"},
+     {"name": "partsupp", 
+     	"type": {"type": "array", "items":[
+     		{"type": "record", "namespace": "AvroTest.pps", "name": "Partsupp",
+     		"fields": [     
+     			{"name": "ps_partkey", "type": "long"},
+     			{"name": "ps_suppkey", "type": "long"},
+     			{"name": "ps_supplycost", "type": "float"}
+     			]
+     		}
+     		]
+     	}
+     }
+ ]
+}

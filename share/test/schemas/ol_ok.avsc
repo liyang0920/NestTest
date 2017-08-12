@@ -1,0 +1,7 @@
+{"type": "record", 
+"namespace": "AvroTest.loc",
+"name": "Orders",
+ 	"fields": [
+     	{"name": "o_orderkey", "type": "long", "order": "ignore"}	
+ 	]
+ }

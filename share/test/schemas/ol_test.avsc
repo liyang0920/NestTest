@@ -1,0 +1,24 @@
+{"type": "record", 
+"namespace": "AvroTest.loc",
+"name": "Orders",
+ 	"fields": [
+     	{"name": "o_orderkey", "type": "long", "order": "ignore"},
+     	{"name": "o_custkey", "type": "long"},
+     	{"name": "o_orderdate", "type": "string"},
+     	{"name": "o_orderpriority", "type": "string"},
+     	{"name": "lineitem", 
+     		"type": {"type": "array", "items": [
+     			{"type": "record", 
+					"namespace": "AvroTest.loc",
+					"name": "Lineitem",
+					"fields": [
+						{"name": "l_linenumber", "type": "int"},
+						{"name": "l_quantity", "type": "float"},
+						{"name": "l_shipdate", "type": "string"}
+					]
+				}
+				]
+     		}
+		}			
+ 	]
+ }
